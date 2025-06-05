@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TODO List with Images</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-image: url('https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=1350&q=80');
+      background-size: cover;
+      background-position: center;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .todo-box {
+      background-color: rgba(255, 255, 255, 0.95);
+      width: 350px;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    .todo-box h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .input-row {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .input-row input {
+      padding: 10px;
+      width: 65%;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .input-row button {
+      padding: 10px;
+      background-color: #2e7d32;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: not-allowed;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      background-color: #e0f2f1;
+      padding: 10px 15px;
+      margin: 10px 0;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    li img {
+      width: 20px;
+      height: 20px;
+    }
+
+    .done {
+      text-decoration: line-through;
+      color: gray;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="todo-box">
+    <h2>🌟 My Stylish TODO List</h2>
+
+    <div class="input-row">
+      <input type="text" placeholder="Task name..." disabled>
+      <button disabled>Add</button>
+    </div>
+
+    <ul>
+      <li><img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" alt="tick"> Buy groceries</li>
+      <li class="done"><img src="https://cdn-icons-png.flaticon.com/512/190/190406.png" alt="tick"> Read book</li>
+      <li><img src="https://cdn-icons-png.flaticon.com/512/1055/1055646.png" alt="tick"> Practice HTML & CSS</li>
+    </ul>
+  </div>
+
+</body>
+</html>
+
